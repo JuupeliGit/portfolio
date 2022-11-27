@@ -18,7 +18,6 @@ function App() {
   const refPortfolio = [
     useRef(null),
     useRef(null),
-    useRef(null),
     useRef(null)
   ];
   const refContacts = useRef(null);
@@ -29,8 +28,7 @@ function App() {
     [
       event => scrollToRef(event, refPortfolio[0]),
       event => scrollToRef(event, refPortfolio[1]),
-      event => scrollToRef(event, refPortfolio[2]),
-      event => scrollToRef(event, refPortfolio[3])
+      event => scrollToRef(event, refPortfolio[2])
     ],
     event => scrollToRef(event, refContacts)
   ];
