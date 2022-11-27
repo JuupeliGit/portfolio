@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a85bf602.css",
-    "main.js": "/portfolio/static/js/main.e81f42d0.js",
+    "main.css": "/portfolio/static/css/main.5405c531.css",
+    "main.js": "/portfolio/static/js/main.8f9f865a.js",
     "static/media/itchio-logo-textless-white.svg": "/portfolio/static/media/itchio-logo-textless-white.a14ca53d0c9ff63b20af495cf21a0065.svg",
     "index.html": "/portfolio/index.html",
     "static/media/navigate_before_white_24dp.svg": "/portfolio/static/media/navigate_before_white_24dp.f6f1e3be4c807b8cdbceaec83c5f9c58.svg",
     "static/media/navigate_next_white_24dp.svg": "/portfolio/static/media/navigate_next_white_24dp.a1d20572b308fc726e4bdd8c1ffd5df8.svg",
     "static/media/menu_white_24dp.svg": "/portfolio/static/media/menu_white_24dp.f8235882574e17fb850f4c89f02d8fe3.svg",
-    "main.a85bf602.css.map": "/portfolio/static/css/main.a85bf602.css.map",
-    "main.e81f42d0.js.map": "/portfolio/static/js/main.e81f42d0.js.map"
+    "main.5405c531.css.map": "/portfolio/static/css/main.5405c531.css.map",
+    "main.8f9f865a.js.map": "/portfolio/static/js/main.8f9f865a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a85bf602.css",
-    "static/js/main.e81f42d0.js"
+    "static/css/main.5405c531.css",
+    "static/js/main.8f9f865a.js"
   ]
 }
