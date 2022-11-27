@@ -1,5 +1,52 @@
 .App {
-  text-align: center;
+  background-color: white;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-column {
+  background-color: white;
+  height: max-content;
+  width: 100%;
+  max-width: 70em;
+  align-self: center;
+
+  position: relative;
+  /*
+  border-style: none solid;
+  border-width: 1px;
+  border-color: #e3e8f1;
+*/
+  font-size: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.App-split {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #e3e8f1, rgba(0, 0, 0, 0));
+
+  padding: 1px;
+
+}
+
+.App-link {
+  color: #61dafb;
 }
 
 .App-logo {
@@ -7,31 +54,55 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App-lightbox {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  ;
+
+  position: fixed;
+
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  visibility: visible;
+}
+
+.Hidden {
+  visibility: hidden;
+}
+
+.App-lightbox>img {
+  width: 50%;
+  height: 80%;
+
+  object-fit: contain;
+
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .App-lightbox>img {
+    width: 100%;
+    height: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s ease;
+  }
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

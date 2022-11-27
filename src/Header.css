@@ -1,0 +1,132 @@
+.Header {
+    background-color: #4169e1;
+    height: 4em;
+
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
+    clip-path: inset(0 -1px -50em 0);
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Header-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header-nav-mobile {
+    background-color: #4169E1;
+
+    width: 50%;
+
+    position: absolute;
+
+    bottom: 0;
+    transform: translateY(100%);
+
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
+    clip-path: inset(0 0 -50em -50em);
+
+    display: none;
+    flex-direction: column;
+}
+
+.Header-nav-icon {
+    height: 3em;
+    width: 3em;
+
+    margin: 0.5em;
+    display: none;
+}
+
+.Header-nav-icon>img {
+    height: 3em;
+    width: 3em;
+}
+
+.Header-nav-button {
+    height: 100%;
+
+    padding: 1em;
+
+    color: white;
+    text-decoration: none;
+    text-align: start;
+
+    transition: all 0.125s;
+
+    white-space: pre;
+}
+
+.Header-nav-button:hover,
+.Header-nav-dropdown:hover .Header-nav-button {
+    border-style: none none solid none;
+    border-width: 5px;
+}
+
+.Header-nav-dropdown {
+    width: 100%;
+
+    display: inline-block;
+    position: relative;
+}
+
+.Header-nav-dropdown-content {
+    background-color: gray;
+    position: absolute;
+
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
+    clip-path: inset(0 -1em -1em -1em);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0s, opacity 0.125s;
+}
+
+.Header-nav-dropdown-button {
+    width: 100%;
+
+    padding: 1em;
+
+    color: white;
+    text-decoration: none;
+    text-align: start;
+
+    transition: all 0.125s;
+
+    white-space: pre;
+}
+
+.Header-nav-dropdown-button:hover {
+    background-color: #4169E1;
+
+    border-style: none none none solid;
+    border-width: 5px;
+}
+
+.Header-nav-dropdown:hover .Header-nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .Header-nav {
+        display: none;
+    }
+
+    .Header-nav-mobile {
+        display: flex;
+    }
+
+    .Header-nav-icon {
+        display: block;
+    }
+}

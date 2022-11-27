@@ -1,0 +1,49 @@
+.About {
+    margin: 3em 2em;
+
+    position: relative;
+}
+
+.About-table {
+    display: flex;
+    flex-direction: row;
+}
+
+.About-table-column {
+    padding: 0 1em;
+}
+
+.About-profile {
+    padding-top: 100%;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+}
+
+.About-profile>img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .About-table {
+        flex-direction: column;
+    }
+
+    .About-table-column {
+        padding: 0;
+    }
+
+    .About-profile {
+        display: none;
+    }
+}
