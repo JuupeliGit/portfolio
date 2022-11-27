@@ -31,9 +31,6 @@ function Header(props) {
                         <button onClick={props.scrollTo[2][2]} className='Header-nav-dropdown-button'>
                             Android
                         </button>
-                        <button onClick={props.scrollTo[2][3]} className='Header-nav-dropdown-button'>
-                            React
-                        </button>
                     </div>
                 </div>
                 <button onClick={props.scrollTo[3]} className='Header-nav-button'>
