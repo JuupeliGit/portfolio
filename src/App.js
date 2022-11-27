@@ -35,7 +35,7 @@ function App() {
     event => scrollToRef(event, refContacts)
   ];
 
-  const [lightboxOpen, setLightboxOpen] = useState(true);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState('');
 
   function scrollToRef(event, ref) {

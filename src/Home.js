@@ -6,11 +6,10 @@ import Slideshow from './components/Slideshow';
 function Home(props) {
 
     const images = [
+        'https://i.imgur.com/SY29ioF.png',
         'https://img.itch.zone/aW1hZ2UvNjkzODc1LzM4NDQ4MTcucG5n/original/kJzURp.png',
-        '/images/MtG Wallpaper.jpg',
-        '/images/MtG Wallpaper.jpg',
-        '/images/MtG Wallpaper.jpg',
-        '/images/MtG Wallpaper.jpg',
+        'https://img.itch.zone/aW1hZ2UvMzE2OTU1LzE1NjExNDYucG5n/original/wlKke7.png',
+        'https://i.imgur.com/yKwnuS5.png',
     ];
 
     return (

@@ -20,8 +20,6 @@ const Portfolio = ({ refProp, content, setLightboxOpen }) => {
                 <h3 ref={refProp[2]}>Android / Java</h3>
                 <PortfolioCard content={content[2]} onImageClick={setLightboxOpen} />
                 <PortfolioCard content={content[3]} onImageClick={setLightboxOpen} />
-                <h3 ref={refProp[3]}>Javascript / React</h3>
-                <PortfolioCard content={content[4]} onImageClick={setLightboxOpen} />
             </div>
         </div>
     );
@@ -29,21 +27,23 @@ const Portfolio = ({ refProp, content, setLightboxOpen }) => {
 
 const PortfolioCard = ({ content, onImageClick }) => {
     return (
-        <div className='Portfolio-table-row'>
-            <div className={`Portfolio-table-${content.vertical ? 'column' : 'row'}`} style={{ flex: (content.ratio || 0) }}>
-                {content.img && content.img.map((image, i) =>
-                    <button
-                        key={image + i}
-                        className='Portfolio-image'
-                        onClick={() => onImageClick(image)}
-                    >
-                        <img src={image}></img>
-                    </button>
-                )}
-            </div>
-            <div className='Portfolio-table-column' style={{ flex: 1 - (content.ratio || 0) }}>
-                <h3>{content.title}</h3>
-                <p>{content.text}</p>
+        <div className='Portfolio-card'>
+            <div className='Portfolio-table-row'>
+                <div className={`Portfolio-table-${content.vertical ? 'column' : 'row'}`} style={{ flex: (content.ratio || 0) }}>
+                    {content.img && content.img.map((image, i) =>
+                        <button
+                            key={image + i}
+                            className='Portfolio-image'
+                            onClick={() => onImageClick(image)}
+                        >
+                            <img src={image}></img>
+                        </button>
+                    )}
+                </div>
+                <div className='Portfolio-table-column' style={{ flex: 1 - (content.ratio || 0) }}>
+                    <h3>{content.title}</h3>
+                    <p>{content.text}</p>
+                </div>
             </div>
         </div>
     );

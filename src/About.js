@@ -47,7 +47,7 @@ function About(props) {
                 </div>
                 <div className='About-table-column' style={{ flex: 2 }}>
                     <div className='About-profile'>
-                        <img src='/images/Juho_New.png'></img>
+                        <img src='https://i.imgur.com/Xp1NLD7.png'></img>
                     </div>
                 </div>
             </div >
